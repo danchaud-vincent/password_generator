@@ -1,5 +1,110 @@
 body{
     padding: 0;
     margin: 0;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Karla", serif;
+    color: white;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+#highlightTitle{
+    color: #10B981;
+}
+
+p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.subtitle{
+    font-style: italic;
+}
+
+button{
+    background: #10B981;
+    color: white;
+    border-radius: 5px;
+}
+
+#generate-btn{
+    padding: 10px 15px;
+    margin: 30px 0; 
+}
+
+.password-generator-section{
+    width: 550px;
+    height: 550px;
+    background: #1F2937;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    height: 100%;
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.header{
+    border-bottom: 1px solid white;
+}
+
+.password-settings-container{
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.input-checkboxes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input-length{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.password-results-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copy-container {
+    width: 180px;
+    background: #273549;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.password-output{
+    width: 90%;
+    color:#10B981;
+}
+
+.copy-container img{
+    width: 20px;
+}
+
+.copy-btn{
+    margin: 0;
 }
 

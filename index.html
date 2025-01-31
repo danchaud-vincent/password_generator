@@ -7,6 +7,51 @@
         <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     </head>
     <body>
+        <section class="password-generator-section">
+            <div class="wrapper">
+
+                <div class="header">
+                    <h1>Generate a <br><span id="highlightTitle">random password</span></h1>
+                    <p class="subtitle">Never use an insecure password again.</p>
+                </div>
+                
+
+                <div class="password-settings-container">
+                    <div class="input-length">
+                        <p>Password lenght : </p>
+                        <input type="number" min="5" max="16">
+                    </div>
+
+                    <div class="input-checkboxes">
+                        <div >
+                            <input type="checkbox" id="number-check" name="numberCheck">
+                            <label for="numberCheck">Add Numbers</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" id="symbols-check" name="symbolsCheck">
+                            <label for="symbolsCheck">Add Symbols</label>
+                        </div>
+                    </div>
+                    
+                    <button id="generate-btn">Generate passwords</button>
+                </div>
+
+                <div class="password-results-container">
+                    <div class="copy-container">
+                        <div class="password-output"></div>
+                        <button class="copy-btn"><img src="sources/images/copy_icon.png" alt="copy icon" class="icon-img"></button>
+                    </div>
+                    
+                    <div class="copy-container">
+                        <div class="password-output"></div>
+                        <button class="copy-btn"><img src="sources/images/copy_icon.png" alt="copy icon" class="icon-img"></button>
+                    </div>
+                    
+                </div>
+                                
+            </div>
+        </section>
 
         <script src="index.js"></script>
     </body>
