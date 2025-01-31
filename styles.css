@@ -20,14 +20,19 @@ h1{
     color: #10B981;
 }
 
-p{
+#subtitle{
     font-weight: 400;
     font-size: 20px;
-}
-
-.subtitle{
     font-style: italic;
 }
+
+.alert-message{
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
 
 button{
     background: #10B981;
@@ -76,7 +81,7 @@ button{
 .input-length{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .password-results-container{
