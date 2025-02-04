@@ -7,49 +7,49 @@
         <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class="password-generator-section">
-            <div class="wrapper">
-                <div class="header">
-                    <h1>Generate a <br><span id="highlightTitle">random password</span></h1>
-                    <p id="subtitle">Never use an insecure password again.</p>
+        <section class="main-section">
+            <div class="main-section-wrapper">
+                <div class="main-section-wrapper-header">
+                    <h1>Generate a <br><span id="header-highlightWord">random password</span></h1>
+                    <p id="header-subtitle">Never use an insecure password again.</p>
                 </div>
                 
-
-                <div class="password-settings-container">
-                    <div class="input-length">
+                <div class="main-section-wrapper-settings">
+                    <div class="settings-input">
                         <p>Password length : </p>
-                        <input type="number" min="5" max="16">
-                        <p class="alert-message">The password must be between 5-16 characters</p>
+                        <input type="number" min="5" max="16" id="nbCharacters-input-el">
+                        <p class="settings-alert-message" id="alert-message-el">The password must be between 5-16 characters</p>
                     </div>
 
-                    <div class="input-checkboxes">
+                    <div class="settings-checkboxes">
                         <div >
-                            <input type="checkbox" id="number-check" name="numberCheck">
-                            <label for="numberCheck">Add Numbers</label>
+                            <input type="checkbox" id="integer-checkbox-el" name="integerCheckbox">
+                            <label for="integerCheckbox">Add Numbers</label>
                         </div>
                         
                         <div>
-                            <input type="checkbox" id="symbols-check" name="symbolsCheck">
-                            <label for="symbolsCheck">Add Symbols</label>
+                            <input type="checkbox" id="symbols-checkbox-el" name="symbolsCheckbox">
+                            <label for="symbolsCheckbox">Add Symbols</label>
                         </div>
                     </div>
                     
-                    <button id="generate-btn">Generate passwords</button>
+                    <button id="generate-btn" onclick="generate()">Generate passwords</button>
                 </div>
 
-                <div class="password-results-container">
-                    <div class="copy-container">
-                        <div class="password-output"></div>
-                        <button class="copy-btn"><img src="sources/images/copy_icon.png" alt="copy icon" class="icon-img"></button>
+                <div class="main-section-wrapper-passwords">
+                    <div class="passwords-container">
+                        <div class="passwords-result" id="password-one-el"></div>
+                        <div class="copy-text-one">copied</div>
+                        <button id="saveOne" class="passwords-copy-btn" onclick="save(this.id)"><img src="sources/images/copy_icon.png" alt="copy icon" class="icon-img"></button>
+                        
                     </div>
                     
-                    <div class="copy-container">
-                        <div class="password-output"></div>
-                        <button class="copy-btn"><img src="sources/images/copy_icon.png" alt="copy icon" class="icon-img"></button>
+                    <div class="passwords-container">
+                        <div class="passwords-result" id="password-two-el"></div>
+                        <div class="copy-text-two">copied</div>
+                        <button id="saveTwo" class="passwords-copy-btn" onclick="save(this.id)"><img src="sources/images/copy_icon.png" alt="copy icon" class="icon-img"></button>
                     </div>
-                    
-                </div>
-                                
+                </div>                  
             </div>
         </section>
 

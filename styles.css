@@ -10,42 +10,20 @@ body{
     color: white;
 }
 
-h1{
-    font-weight: 800;
-    font-size: 40px;
-    margin-top: 0;
-}
-
-#highlightTitle{
-    color: #10B981;
-}
-
-#subtitle{
-    font-weight: 400;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.alert-message{
-    font-weight: 400;
-    font-size: 12px;
-    font-style: italic;
-    color: red;
-}
-
-
 button{
     background: #10B981;
     color: white;
     border-radius: 5px;
 }
 
-#generate-btn{
-    padding: 10px 15px;
-    margin: 30px 0; 
+h1{
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 0;
 }
 
-.password-generator-section{
+
+.main-section{
     width: 550px;
     height: 550px;
     background: #1F2937;
@@ -54,7 +32,7 @@ button{
     justify-content: center;
 }
 
-.wrapper{
+.main-section-wrapper{
     height: 100%;
     width: 450px;
 
@@ -63,34 +41,62 @@ button{
     justify-content: space-evenly;
 }
 
-.header{
+/*main section HEADER */
+.main-section-wrapper-header{
     border-bottom: 1px solid white;
 }
 
-.password-settings-container{
+#header-highlightWord{
+    color: #10B981;
+}
+
+#header-subtitle{
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* main section SETTINGS*/
+.main-section-wrapper-settings{
     border-bottom: 1px solid white;
     text-align: center;
 }
 
-.input-checkboxes{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.input-length{
+.settings-input{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.password-results-container{
+.settings-checkboxes{
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.copy-container {
-    width: 180px;
+.settings-alert-message{
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    visibility: hidden;
+}
+
+#generate-btn{
+    padding: 10px 15px;
+    margin: 30px 0; 
+    cursor: pointer;
+}
+
+
+/* main section PASSWORDS*/
+.main-section-wrapper-passwords{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.passwords-container {
+    width: 195px;
     background: #273549;
     padding: 5px 10px;
     border-radius: 5px;
@@ -99,17 +105,29 @@ button{
     align-items: center;
 }
 
+.passwords-container img{
+    width: 20px;
+}
 
-.password-output{
+.passwords-result{
     width: 90%;
     color:#10B981;
 }
 
-.copy-container img{
-    width: 20px;
+.passwords-copy-btn{
+    cursor: pointer;
 }
 
-.copy-btn{
-    margin: 0;
+.copy-text-one, .copy-text-two{
+    position: relative;
+    color:white;
+    top: -40px;
+    left: 50px;
+    background: #10B981;
+	padding: 2px 10px;
+	border-radius: 20px;
+	font-size: 15px;
+    visibility: hidden;
 }
+
 
