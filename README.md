@@ -1,3 +1,12 @@
-# PASSWORD GENERATOR PROJECT
+# GROCERIES FIREBASE APP
 
-This project is part of the Frontend developer course in the online platform Scrimba
+## SCRIMBA PROJECT
+
+Project based on the The Frontend Developer Career Path.
+I developped a website to generate random passwords.
+
+### TOOLS
+
+- HTML
+- CSS
+- JAVASCRIPT
